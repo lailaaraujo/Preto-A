@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Anarchy';
+  src: url('/fonts/anarchy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #4d6188 #10141c;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #10141c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b4a63;
+  border: 3px solid #10141c;
+  border-radius: 8px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #10141c;
+  background-image: url('/images/denim-tile.jpg');
+  background-repeat: repeat;
+  background-size: 420px;
+}
+
+.denim-surface {
+  background-color: #10141c;
+  background-image: url('/images/denim-tile.jpg');
+  background-repeat: repeat;
+  background-size: 420px;
+}
+
+.section-photo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.section-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,14,20,0.35) 0%, rgba(11,14,20,0.7) 100%);
+  pointer-events: none;
+}
+
+.stitch-frame {
+  border: 1px dashed rgba(242, 237, 225, 0.4);
+  position: relative;
+}
+
+.stitch-frame::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(242, 237, 225, 0.18);
+  pointer-events: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

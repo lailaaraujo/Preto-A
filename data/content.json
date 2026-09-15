@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "handle": "@pretoa.dsgn",
+    "backgroundImage": "/images/hero-bg.jpg"
+  },
+  "brand": {
+    "eyebrow": "A MARCA",
+    "subtitle": "Transformação, Resistência e Moda Sustentável.",
+    "paragraphs": [
+      "A PretoÁ nasce na interseção entre o design autoral, a cultura urbana e a urgente necessidade de desaceleração do planeta. Em um cenário dominado pelo consumo descartável da fast fashion, a marca se consolida como um manifesto vivo de reexistência. Para nós, a moda sustentável não é apenas um conceito ou uma tendência — é a única linguagem possível para o futuro da criação vestível.",
+      "O upcycling é o coração pulsante da PretoÁ. Especializados na ressignificação do jeans, enxergamos no tecido mais abundante e poluente do mundo uma tela em branco impregnada de memórias. Através da desconstrução minuciosa, do reaproveitamento têxtil total e de um rigoroso processo de corte e costura artesanal, cada peça ganha nova vida em modelagens ousadas, texturas sobrepostas e um design que valoriza o corpo e o movimento. Nenhuma peça PretoÁ é igual a outra: vestir a marca é carregar uma obra de arte única, ética e carregada de identidade."
+    ],
+    "backgroundImage": "/images/brand-bg.jpg",
+    "galleryImage": "/images/brand-gallery.jpg"
+  },
+  "designer": {
+    "eyebrow": "O DESIGNER",
+    "name": "MICKAEL RAMOS",
+    "backgroundImage": "/images/designer-photo.jpg",
+    "bio": [
+      "Por trás da arquitetura, do conceito e da essência da PretoÁ está a visão criativa do designer e diretor criativo Mickael Ramos. Graduado em Direção de Arte e com uma bagagem de mais de duas décadas nas artes cênicas, dança e artes visuais, Mickael imprime nas coleções da marca uma sensibilidade singular sobre a relação entre o corpo, o espaço e a roupa.",
+      "Sua atuação ultrapassa a estética tradicional da moda: o vestir é encarado como uma extensão política e artística da linguagem corporal. Sob sua direção, o jeans resgatado ganha formatos dramáticos, recortes marcantes e um acabamento de alta qualidade, provando que a sustentabilidade pode caminhar junto com a alta moda, o design autoral e a sofisticação urbana."
+    ],
+    "galleryImage": "/images/designer-gallery.jpg"
+  },
+  "landmark": {
+    "eyebrow": "O MARCO",
+    "title": "Manifashion PretoÁ no Re.mostra (2025)",
+    "paragraphs": [
+      "Um dos momentos mais emblemáticos da trajetória da PretoÁ foi a realização do Manifashion PretoÁ, evento apresentado no Centro de Cultura Raul de Leoni em novembro de 2025, integrando a programação do projeto Re.mostra.",
+      "A apresentação foi concebida não como um desfile convencional, mas como um espetáculo-manifesto. Unindo moda, performance e reflexão ambiental, a PretoÁ ocupou o espaço cultural com uma coleção inteiramente autoral e sustentável, evidenciando o poder de transformação do descarte têxtil. O evento marcou a consolidação da marca na cena cultural e na moda independente, reafirmando o compromisso de ocupar palcos de destaque com arte responsável e atitude."
+    ],
+    "backgroundImage": "/images/marco-bg.jpg",
+    "galleryImage": "/images/marco-gallery.jpg"
+  },
+  "wearers": {
+    "eyebrow": "QUEM VESTE",
+    "intro": "O design autoral e a proposta engajada da PretoÁ conquistaram artistas e personalidades da música e do entretenimento que buscam autenticidade em suas apresentações e aparições públicas. A marca orgulha-se de ter vestido nomes de grande relevância visual e artística.",
+    "backgroundImage": "/images/wearers-bg.jpg",
+    "galleryImage": "/images/wearers-gallery.jpg",
+    "people": [
+      {
+        "name": "Topre",
+        "bio": "O rapper que levou a essência autoral da PretoÁ para um dos maiores cenários da música ao vestir a marca em sua performance no festival Rock the Mountain, unindo o flow da cena urbana à força da moda sustentável."
+      },
+      {
+        "name": "Lorena Simpson",
+        "bio": "Ícone da música pop/dance nacional, que levou a potência visual e a presença marcante das criações em jeans sustentável para os seus palcos."
+      },
+      {
+        "name": "DJ Lukas",
+        "bio": "Referência da cena eletrônica, incorporando a estética urbana, a textura e a atitude da marca em seus sets e apresentações."
+      }
+    ]
+  },
+  "impact": {
+    "eyebrow": "O IMPACTO",
+    "image": "/images/impact.jpg"
+  },
+  "contact": {
+    "eyebrow": "O CONTATO",
+    "instagramHandle": "@pretoa.dsgn",
+    "instagramUrl": "https://instagram.com/pretoa.dsgn",
+    "instagramIcon": "/images/icon-instagram.jpg",
+    "whatsappNumber": "(21) 96951-5006",
+    "whatsappUrl": "https://wa.me/5521969515006",
+    "whatsappIcon": "/images/icon-whatsapp.jpg",
+    "email": "contato@pretoa.dsgn",
+    "note": "Cada peça é projetada e produzida exclusivamente pra você. Também trabalhamos com aluguel de peças para eventos, shows e photoshoot. Solicite seu orçamento."
+  },
+  "closing": {
+    "tagline": "\"MAIS QUE MODA, UM MOVIMENTO\"",
+    "backgroundImage": "/images/closing-bg.jpg"
+  }
+}

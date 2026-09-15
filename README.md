@@ -1,0 +1,60 @@
+# PretoÁ — Landing Page
+
+Site institucional da PretoÁ, feito em Next.js. Mostra a marca, o designer, o evento Manifashion, quem já vestiu as peças e os canais de contato — usando as fotos reais do book e o mesmo fundo jeans do portfólio original.
+
+## Rodando localmente
+
+Precisa ter o Node.js instalado (versão 18 ou mais nova).
+
+```bash
+npm install
+cp .env.local.example .env.local
+```
+
+Abra o `.env.local` e troque `ADMIN_PASSWORD` pela senha que você quer usar para entrar na área de edição, e troque `ADMIN_SESSION_SECRET` por qualquer string aleatória grande (só precisa ser difícil de adivinhar).
+
+Depois:
+
+```bash
+npm run dev
+```
+
+O site abre em `http://localhost:3000`.
+
+## A fonte dos títulos
+
+Os títulos ("A MARCA", "O DESIGNER" etc.) usam a fonte **Anarchy**, da Apostrophic Labs (gratuita, inclusive para uso comercial), tirada direto do portfólio original e já incluída em `public/fonts/anarchy.ttf`. Não precisa fazer nada, já funciona igual ao PDF assim que você roda o projeto.
+
+## Colocando no ar
+
+```bash
+npm run build
+npm start
+```
+
+Isso sobe o site em modo produção. Se for hospedar em algum provedor (Vercel, Railway, VPS etc.), lembre de configurar as mesmas variáveis de ambiente (`ADMIN_PASSWORD` e `ADMIN_SESSION_SECRET`) lá também.
+
+Um detalhe importante: as fotos e os textos ficam salvos em arquivos dentro do próprio servidor (`data/content.json` e `public/uploads`, além das fotos originais em `public/images`). Isso funciona liso em qualquer hospedagem que rode o Node continuamente (VPS, Railway, Render, um servidor próprio). Em hospedagens serverless como a Vercel no plano padrão, o sistema de arquivos é temporário e as alterações podem se perder depois de um tempo — nesse caso vale usar um serviço de storage (tipo Vercel Blob) ou rodar num servidor tradicional.
+
+## Editando o conteúdo e as fotos
+
+Acesse `/admin` (por exemplo `seusite.com/admin`), entre com a senha definida no `.env.local` e edite os textos e troque as fotos direto por lá, tanto pelo computador quanto pelo celular. Só quem tiver a senha consegue alterar — os visitantes do site só veem a página normal.
+
+## Colocando os links de contato
+
+Em `/admin`, na seção "O Contato", dá pra colocar:
+- o link do Instagram
+- o link do WhatsApp (formato `https://wa.me/55DDDNUMERO`, sem espaço ou traço)
+- o e-mail
+
+Esses mesmos dados também aparecem no botão "Falar no WhatsApp" do menu e no link da seção do Impacto.
+
+## Estrutura
+
+- `app/page.tsx` — página principal, monta todas as seções
+- `app/admin/page.tsx` — painel de edição
+- `components/` — cada seção do site (Capa, A Marca, O Designer, O Marco, Quem Veste, O Impacto, O Contato)
+- `data/content.json` — onde ficam os textos (editável pelo painel ou na mão)
+- `public/images/` — fotos originais do book, usadas como padrão
+- `public/uploads/` — fotos novas enviadas pelo painel de edição
+- `public/fonts/` — onde entra o arquivo da fonte Anarchy
