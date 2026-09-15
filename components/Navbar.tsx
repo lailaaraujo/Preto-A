@@ -37,7 +37,7 @@ export default function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
             <a
               key={link.href}
               href={link.href}
-              className="font-scratch text-base xl:text-lg text-bone/80 hover:text-bone transition-colors whitespace-nowrap"
+              className="text-sm text-bone/80 hover:text-bone transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
@@ -78,7 +78,7 @@ export default function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="font-scratch text-xl text-bone/90"
+                  className="text-base text-bone/90"
                 >
                   {link.label}
                 </a>
