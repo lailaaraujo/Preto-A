@@ -23,11 +23,17 @@ O site abre em `http://localhost:3000`.
 
 ## A fonte dos títulos
 
-Os títulos ("A MARCA", "O DESIGNER" etc.) usam a fonte **Cabin Sketch**, do Google Fonts — free e com o alfabeto completo (maiúsculas, minúsculas, números, acentos, tudo).
+Os títulos ("A MARCA", "O DESIGNER" etc.) usam a fonte **Anarchy**, de SnatchSoft — e ela é sim gratuita. O que rolou foi o seguinte: o arquivo que veio embutido dentro do PDF do portfólio está incompleto (faltam letras, coisa de exportação do Canva), mas a fonte original **completa** é grátis e está disponível direto na fonte oficial:
 
-A fonte que aparece no PDF original do portfólio (chamada internamente de "Anarchy") acabou não dando pra usar: ela é uma fonte shareware de outro criador (não é grátis de verdade), e a versão que veio embutida no PDF só tem o desenho de 16 letras maiúsculas liberado — o resto das letras está literalmente em branco dentro do arquivo. Foi por isso que "MICKAEL" apareceu sem o K e o L. Como não é uma fonte gratuita para uso comercial, a Cabin Sketch é a alternativa mais parecida no estilo (também é uma fonte "riscada"/sketch) que funciona 100% completa, sem nenhuma letra faltando em nenhum texto, nem nos que você digitar depois pelo painel `/admin`.
+1. Baixe em `https://www.dafont.com/anarchy.font` (clique em "Download")
+2. Extraia o zip baixado e pegue o arquivo `Anarchy.ttf` de dentro
+3. Coloque em `public/fonts/anarchy.ttf` (substituindo se já existir algo ali)
 
-Se um dia vocês quiserem comprar a licença comercial da fonte original (Anarchy, do SnatchSoft, vendida no dafont.com) pra ficar pixel-perfeito com o PDF, é só: baixar o arquivo `.ttf` completo, colocar em `public/fonts/anarchy.ttf`, e no arquivo `app/layout.tsx` trocar o `Cabin_Sketch` por uma declaração de fonte local apontando pra esse arquivo. Mas isso é totalmente opcional — o site já funciona bem sem isso.
+Assim que colocar o arquivo, salva, reinicia o `npm run dev`, e os títulos passam a usar a fonte de verdade, completa — incluindo "MICKAEL RAMOS" e qualquer nome novo que vocês editarem depois.
+
+Enquanto esse arquivo não estiver na pasta, o site usa uma fonte bem parecida (Cabin Sketch) no lugar, então nada quebra — é só uma diferença visual sutil até vocês colocarem o arquivo certo.
+
+Um detalhe: fontes desse tipo (grunge/trash antigas do dafont) geralmente não incluem números nem letras acentuadas (á, ã, ç etc.) — só o alfabeto básico A-Z e a-z. Isso não afeta nada do que já está no site hoje, mas se um dia editarem um texto com acento ou número numa área que usa essa fonte, essa letra específica vai cair automaticamente na fonte alternativa (Cabin Sketch), sem quebrar nada.
 
 ## Colocando no ar
 
@@ -61,3 +67,4 @@ Esses mesmos dados também aparecem no botão "Falar no WhatsApp" do menu e no l
 - `data/content.json` — onde ficam os textos (editável pelo painel ou na mão)
 - `public/images/` — fotos originais do book, usadas como padrão
 - `public/uploads/` — fotos novas enviadas pelo painel de edição
+- `public/fonts/` — onde entra o arquivo da fonte Anarchy
