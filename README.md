@@ -23,7 +23,11 @@ O site abre em `http://localhost:3000`.
 
 ## A fonte dos títulos
 
-Os títulos ("A MARCA", "O DESIGNER" etc.) usam a fonte **Anarchy**, da Apostrophic Labs (gratuita, inclusive para uso comercial), tirada direto do portfólio original e já incluída em `public/fonts/anarchy.ttf`. Não precisa fazer nada, já funciona igual ao PDF assim que você roda o projeto.
+Os títulos ("A MARCA", "O DESIGNER" etc.) usam a fonte **Cabin Sketch**, do Google Fonts — free e com o alfabeto completo (maiúsculas, minúsculas, números, acentos, tudo).
+
+A fonte que aparece no PDF original do portfólio (chamada internamente de "Anarchy") acabou não dando pra usar: ela é uma fonte shareware de outro criador (não é grátis de verdade), e a versão que veio embutida no PDF só tem o desenho de 16 letras maiúsculas liberado — o resto das letras está literalmente em branco dentro do arquivo. Foi por isso que "MICKAEL" apareceu sem o K e o L. Como não é uma fonte gratuita para uso comercial, a Cabin Sketch é a alternativa mais parecida no estilo (também é uma fonte "riscada"/sketch) que funciona 100% completa, sem nenhuma letra faltando em nenhum texto, nem nos que você digitar depois pelo painel `/admin`.
+
+Se um dia vocês quiserem comprar a licença comercial da fonte original (Anarchy, do SnatchSoft, vendida no dafont.com) pra ficar pixel-perfeito com o PDF, é só: baixar o arquivo `.ttf` completo, colocar em `public/fonts/anarchy.ttf`, e no arquivo `app/layout.tsx` trocar o `Cabin_Sketch` por uma declaração de fonte local apontando pra esse arquivo. Mas isso é totalmente opcional — o site já funciona bem sem isso.
 
 ## Colocando no ar
 
@@ -57,4 +61,3 @@ Esses mesmos dados também aparecem no botão "Falar no WhatsApp" do menu e no l
 - `data/content.json` — onde ficam os textos (editável pelo painel ou na mão)
 - `public/images/` — fotos originais do book, usadas como padrão
 - `public/uploads/` — fotos novas enviadas pelo painel de edição
-- `public/fonts/` — onde entra o arquivo da fonte Anarchy

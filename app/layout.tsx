@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Caveat, Work_Sans } from 'next/font/google'
+import { Cabin_Sketch, Work_Sans } from 'next/font/google'
 import './globals.css'
 
-const scratchFallback = Caveat({
+const scratch = Cabin_Sketch({
   subsets: ['latin'],
-  weight: ['700'],
+  weight: ['400', '700'],
   variable: '--font-scratch'
 })
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${scratchFallback.variable} ${body.variable} font-body bg-denim-950 text-bone antialiased`}>
+      <body className={`${scratch.variable} ${body.variable} font-body bg-denim-950 text-bone antialiased`}>
         {children}
       </body>
     </html>

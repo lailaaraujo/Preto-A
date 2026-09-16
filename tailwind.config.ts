@@ -21,7 +21,7 @@ const config: Config = {
         brass: '#c9a24a'
       },
       fontFamily: {
-        scratch: ['Anarchy', 'var(--font-scratch)', 'cursive'],
+        scratch: ['var(--font-scratch)', 'cursive'],
         body: ['var(--font-body)']
       },
       backgroundImage: {
